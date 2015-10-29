@@ -9,16 +9,18 @@ class UserController extends Controller
 {
     public function indexAction()
     {
-        //return $this->render('EMMUserBundle:Default:index.html.twig', array('name' => $name));
-        //return new Response('Bienvenido a mi módulo de usuarios');
         $em = $this->getDoctrine()->getManager();
         $users = $em->getRepository('EMMUserBundle:User')->findAll();
 
+        /*
         $res = 'Lista de usuarios: <br />';
         foreach ($users as $user) {
             $res .= 'Usuario: '. $user->getUsername().' Email: '. $user->getEmail(). '<br />';
         }
         return new Response($res);
+        */
+
+        return $this->render('EMMUserBundle:User:index.html.twig',array('users' =>$users));
     }
 
     public function articlesAction($page)
