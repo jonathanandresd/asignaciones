@@ -1,0 +1,4 @@
+services:
+#    emm_usertwo.example:
+#        class: EMM\UsertwoBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,3 +1,7 @@
+emm_usertwo:
+    resource: "@EMMUsertwoBundle/Resources/config/routing.yml"
+    prefix:   /
+
 emm_user:
     resource: "@EMMUserBundle/Resources/config/routing.yml"
     prefix:   /

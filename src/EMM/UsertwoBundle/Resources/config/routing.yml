@@ -1,0 +1,7 @@
+emm_usertwo_usertwo:
+    resource: "@EMMUsertwoBundle/Resources/config/routing/usertwo.yml"
+    prefix:   /usertwo
+
+emm_usertwo_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: EMMUsertwoBundle:Default:index }

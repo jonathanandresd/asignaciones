@@ -1,0 +1,30 @@
+usertwo:
+    path:     /
+    defaults: { _controller: "EMMUsertwoBundle:Usertwo:index" }
+
+usertwo_show:
+    path:     /{id}/show
+    defaults: { _controller: "EMMUsertwoBundle:Usertwo:show" }
+
+usertwo_new:
+    path:     /new
+    defaults: { _controller: "EMMUsertwoBundle:Usertwo:new" }
+
+usertwo_create:
+    path:     /create
+    defaults: { _controller: "EMMUsertwoBundle:Usertwo:create" }
+    methods:  POST
+
+usertwo_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "EMMUsertwoBundle:Usertwo:edit" }
+
+usertwo_update:
+    path:     /{id}/update
+    defaults: { _controller: "EMMUsertwoBundle:Usertwo:update" }
+    methods:  [POST, PUT]
+
+usertwo_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "EMMUsertwoBundle:Usertwo:delete" }
+    methods:  [POST, DELETE]
